@@ -45,7 +45,7 @@ public class Estacionamento extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PainelAT)
+            .addComponent(PainelAT, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         jMenu3.setText("Cadastro");
