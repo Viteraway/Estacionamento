@@ -21,9 +21,9 @@ public class LoginFunc extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        campo_usuario = new javax.swing.JTextField();
+        userLogin = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        campo_senha = new javax.swing.JPasswordField();
+        senhaLogin = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -31,9 +31,9 @@ public class LoginFunc extends javax.swing.JFrame {
 
         jLabel2.setText("Senha");
 
-        campo_usuario.addActionListener(new java.awt.event.ActionListener() {
+        userLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campo_usuarioActionPerformed(evt);
+                userLoginActionPerformed(evt);
             }
         });
 
@@ -44,9 +44,9 @@ public class LoginFunc extends javax.swing.JFrame {
             }
         });
 
-        campo_senha.addActionListener(new java.awt.event.ActionListener() {
+        senhaLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campo_senhaActionPerformed(evt);
+                senhaLoginActionPerformed(evt);
             }
         });
 
@@ -66,8 +66,8 @@ public class LoginFunc extends javax.swing.JFrame {
                             .addComponent(jLabel2))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(campo_usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                            .addComponent(campo_senha))))
+                            .addComponent(userLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                            .addComponent(senhaLogin))))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -76,11 +76,11 @@ public class LoginFunc extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(campo_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(userLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(campo_senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(senhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addComponent(jButton1)
                 .addContainerGap(28, Short.MAX_VALUE))
@@ -89,13 +89,13 @@ public class LoginFunc extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void campo_usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_usuarioActionPerformed
+    private void userLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userLoginActionPerformed
             
-    }//GEN-LAST:event_campo_usuarioActionPerformed
+    }//GEN-LAST:event_userLoginActionPerformed
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
               
-            if(campo_usuario.getText().equals("admin") && campo_senha.getText().equals("1234")){
+            if(userLogin.getText().equals("admin") && senhaLogin.getText().equals("1234")){
             new Estacionamento().setVisible(true);  
             }
             else {
@@ -103,9 +103,9 @@ public class LoginFunc extends javax.swing.JFrame {
             }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void campo_senhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_senhaActionPerformed
+    private void senhaLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaLoginActionPerformed
             
-    }//GEN-LAST:event_campo_senhaActionPerformed
+    }//GEN-LAST:event_senhaLoginActionPerformed
 
     public static void main(String args[]) {
         
@@ -118,10 +118,10 @@ public class LoginFunc extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField campo_senha;
-    private javax.swing.JTextField campo_usuario;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPasswordField senhaLogin;
+    private javax.swing.JTextField userLogin;
     // End of variables declaration//GEN-END:variables
 }
