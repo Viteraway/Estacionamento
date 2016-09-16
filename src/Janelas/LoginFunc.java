@@ -1,6 +1,7 @@
 package Janelas;
 
 
+import Controller.loginListener;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -10,7 +11,7 @@ import javax.swing.JOptionPane;
 
 public class LoginFunc extends javax.swing.JFrame {
     
-    
+  private  loginListener  listener = new loginListener(this);
     
     public LoginFunc() {
         initComponents();
@@ -39,6 +40,8 @@ public class LoginFunc extends javax.swing.JFrame {
             }
         });
 
+        jButton1.addActionListener(listener);
+        jButton1.setActionCommand("login");
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +122,7 @@ public class LoginFunc extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPasswordField senhaLogin;
