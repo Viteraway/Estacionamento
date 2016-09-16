@@ -1,3 +1,5 @@
+package Janelas;
+
 
 import java.awt.Component;
 import java.util.Locale;
@@ -149,8 +151,6 @@ public class Estacionamento extends javax.swing.JFrame {
                 new Estacionamento().setVisible(true);
                 PessoaFrame pessoa = new PessoaFrame();
                 CarroFrame carro = new CarroFrame();
-                
-                
             }
         });
     }

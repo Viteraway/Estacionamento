@@ -1,3 +1,5 @@
+package Janelas;
+
 
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -94,7 +96,6 @@ public class LoginFunc extends javax.swing.JFrame {
     }//GEN-LAST:event_userLoginActionPerformed
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-              
             if(userLogin.getText().equals("admin") && senhaLogin.getText().equals("1234")){
             new Estacionamento().setVisible(true);  
             }
