@@ -21,6 +21,7 @@ public class Estacionamento extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
 
@@ -65,6 +66,14 @@ public class Estacionamento extends javax.swing.JFrame {
             }
         });
         jMenu3.add(jMenuItem5);
+
+        jMenuItem1.setText("Moto");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem1);
 
         jMenuItem6.setText("Data/Hora");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +121,12 @@ public class Estacionamento extends javax.swing.JFrame {
         PainelAT.add(dh);
         dh.setVisible(true);
     }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        MotoFrame moto = new MotoFrame();
+        PainelAT.add(moto);
+        moto.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
     public static void main(String args[]) {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -119,6 +134,7 @@ public class Estacionamento extends javax.swing.JFrame {
                 new Estacionamento().setVisible(true);
                 PessoaFrame pessoa = new PessoaFrame();
                 CarroFrame carro = new CarroFrame();
+                
                 
             }
         });
@@ -128,6 +144,7 @@ public class Estacionamento extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
