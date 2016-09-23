@@ -40,7 +40,6 @@ public class LoginFunc extends javax.swing.JFrame {
             }
         });
 
-        jButton1.addActionListener(listener);
         jButton1.setActionCommand("login");
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
