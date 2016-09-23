@@ -110,11 +110,15 @@ public class LoginFunc extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new LoginFunc().setVisible(true);
-                Estacionamento est = new Estacionamento();
+                //Estacionamento est = new Estacionamento();
             }
         });
     }
 
+    public String getUsuario(){
+        return userLogin.getText().toString();
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
