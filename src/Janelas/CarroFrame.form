@@ -131,9 +131,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitButtonActionPerformed"/>
       </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="exitButton.setActionCommand(&quot;sair&quot;);"/>
-      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

@@ -63,7 +63,6 @@ public class CarroFrame extends javax.swing.JInternalFrame {
             }
         });
 
-        exitButton.setActionCommand("sair");
         exitButton.setText("Sair");
         exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
