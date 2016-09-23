@@ -2,12 +2,15 @@ package Janelas;
 
 
 import java.awt.Component;
+import java.awt.event.ActionListener;
 import java.util.Locale;
 import javax.swing.JInternalFrame;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 
 public class Estacionamento extends javax.swing.JFrame {
+
+    private ActionListener listener;
     
     public Estacionamento() {
         initComponents();
@@ -25,7 +28,6 @@ public class Estacionamento extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -55,6 +57,8 @@ public class Estacionamento extends javax.swing.JFrame {
 
         jMenu3.setText("Cadastro");
 
+        jMenuItem4.setActionCommand("pessoa");
+        jMenuItem4.addActionListener(listener);
         jMenuItem4.setText("Pessoa");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,6 +67,8 @@ public class Estacionamento extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem4);
 
+        jMenuItem5.setActionCommand("carro");
+        jMenuItem5.addActionListener(listener);
         jMenuItem5.setText("Carro");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,6 +77,8 @@ public class Estacionamento extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem5);
 
+        jMenuItem1.setActionCommand("moto");
+        jMenuItem1.addActionListener(listener);
         jMenuItem1.setText("Moto");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,18 +87,11 @@ public class Estacionamento extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem1);
 
-        jMenuItem6.setText("Data/Hora");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem6);
-
         jMenuBar2.add(jMenu3);
 
         jMenu4.setText("Sobre");
 
+        jMenuItem2.setActionCommand("sobre");
         jMenuItem2.setText("Sobre");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,12 +130,6 @@ public class Estacionamento extends javax.swing.JFrame {
         carro.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-        DataHora dh = new DataHora();
-        PainelAT.add(dh);
-        dh.setVisible(true);
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
-
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         MotoFrame moto = new MotoFrame();
         PainelAT.add(moto);
@@ -142,7 +137,7 @@ public class Estacionamento extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        JOptionPane.showMessageDialog(null, "Desenvolvido por: josé Vitor Morona Souza - 2016");
+
     }//GEN-LAST:event_jMenuItem2ActionPerformed
     public static void main(String args[]) {
 
@@ -163,8 +158,11 @@ public class Estacionamento extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     // End of variables declaration//GEN-END:variables
+
+    public Object getDDesktopPane() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

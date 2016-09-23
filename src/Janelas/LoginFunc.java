@@ -1,7 +1,7 @@
 package Janelas;
 
 
-import Controller.loginListener;
+import Controller.LoginListener;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 public class LoginFunc extends javax.swing.JFrame {
     
-  private  loginListener  listener = new loginListener(this);
+  private  LoginListener  listener = new LoginListener(this);
     
     public LoginFunc() {
         initComponents();
@@ -99,12 +99,7 @@ public class LoginFunc extends javax.swing.JFrame {
     }//GEN-LAST:event_userLoginActionPerformed
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-            if(userLogin.getText().equals("admin") && senhaLogin.getText().equals("1234")){
-            new Estacionamento().setVisible(true);  
-            }
-            else {
-                JOptionPane.showMessageDialog(null, "Login inválido");
-            }
+            
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void senhaLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaLoginActionPerformed

@@ -1,33 +1,30 @@
 
 package Controller;
 
-
 import Janelas.MotoFrame;
-import java.awt.Event;
+import Janelas.PessoaFrame;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Locale;
 import javax.swing.JOptionPane;
 
 
-public class MotoListener implements ActionListener{
+public class PessoaListener {
     
-        private  MotoFrame moto;
+    private  PessoaFrame pessoa;
                 
-      public MotoListener (MotoFrame frame){
-          this.moto = frame;
+      public PessoaListener (PessoaFrame frame){
+          this.pessoa = frame;
       }
       
       public void actionPerformed(ActionEvent e){
           
         if ("sair".equals(e.getActionCommand())){
-            moto.dispose();
+            pessoa.dispose();
         }
         else if ("salvar".equals(e.getActionCommand())){
-            JOptionPane.showMessageDialog(moto, "Clicou em salvar!");
+            JOptionPane.showMessageDialog(pessoa, "Clicou em salvar!");
         }
         else if("excluir".equals(e.getActionCommand())){
-            JOptionPane.showMessageDialog(moto, "Clicou em excluir!");
+            JOptionPane.showMessageDialog(pessoa, "Clicou em excluir!");
         }
           }
       }
