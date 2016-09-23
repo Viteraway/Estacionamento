@@ -23,6 +23,8 @@ public class CarroFrame extends javax.swing.JInternalFrame {
         jButton2 = new javax.swing.JButton();
         exitButton = new javax.swing.JButton();
 
+        setTitle("Carro");
+
         jLabel1.setText("Marca");
 
         jLabel2.setText("Placa");
@@ -63,6 +65,11 @@ public class CarroFrame extends javax.swing.JInternalFrame {
 
         exitButton.setActionCommand("sair");
         exitButton.setText("Sair");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -133,6 +140,10 @@ public class CarroFrame extends javax.swing.JInternalFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         JOptionPane.showMessageDialog(null, "Clicou em excluir");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_exitButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

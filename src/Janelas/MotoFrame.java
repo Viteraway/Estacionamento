@@ -24,6 +24,8 @@ public class MotoFrame extends javax.swing.JInternalFrame {
         deleteButton = new javax.swing.JButton();
         exitButton = new javax.swing.JButton();
 
+        setTitle("Moto");
+
         jLabel1.setText("Marca");
 
         jLabel2.setText("Placa");

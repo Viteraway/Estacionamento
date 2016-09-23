@@ -54,6 +54,11 @@ public class PessoaFrame extends javax.swing.JInternalFrame {
 
         exitButton.setActionCommand("sair");
         exitButton.setText("Sair");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -129,6 +134,10 @@ public class PessoaFrame extends javax.swing.JInternalFrame {
     private void codPessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codPessoaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_codPessoaActionPerformed
+
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_exitButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
